@@ -1,54 +1,37 @@
-#include <stdio.h>
+#include <studio.h>
 
 /**
-
-* main - Prints combination of numbers
-
-*
-
-* Return: Always (Success)
-
-*/
-
+ * main - prints numbers between 00 to 89
+ *
+ * Return: Always 0 (uccess)
+ */
 int main(void)
-
 {
+	int i, j;
 
-int c, i;
+	i = 48;
+	j = 48;
 
-for (c = '0'; c <= '9'; c++)
-
-{
-
-for (i = '0'; i <= '9'; i++)
-
-{
-
-if (c < i)
-
-{
-
-putchar(c);
-
-putchar(i);
-
-if (c != '8' || (c == '8' && i != '9'))
-
-{
-
-putchar(',');
-
-putchar(' ');
-
+	while (j < 58)
+	{
+		i = 48;
+		while (i < 58)
+		{
+			if (j != i && j < i)
+			{
+				putchar(j);
+				putchar(i);
+				if (i == 57 && j == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			i++;
+		}
+		j++;
+	}
+	putchar('\n');
+	return (0);
 }
-
-}
-
-}
-
-}
-
-putchar('\n');
-
-return (0);
-
