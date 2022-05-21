@@ -2,7 +2,6 @@
 
 /**
  * print_last_digit - print the last digit of a number
- *
  * @p: The int to print
  * Return: Always 0.
  */
@@ -16,7 +15,7 @@ if (p < 0)
 {	
 last_digit = (-1 * (p % 10));
 _putchar (last_digit + '0');
-retun (last_digit);
+return (last_digit);
 }
 
 else
