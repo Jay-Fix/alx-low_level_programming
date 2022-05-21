@@ -12,7 +12,8 @@ int print_sign(int p)
 if (p > 0)
 {
 _putchar ('+');
-return (1);}
+return (1);
+}
 
 else if (p == 0)
 {
